@@ -81,8 +81,8 @@ export default {
   },
   //过滤器，显示日期
   filters: {
-    dateFormat(dataStr) {
-      var time = new Date(dataStr);
+    dateFormat(dateTime) {
+      var time = new Date(dateTime);
       var month = time.getMonth() + 1;
       var day = time.getDate();
       var weekday = time.getDay();
@@ -92,7 +92,7 @@ export default {
         day +
         "日" +
         " " +
-        (weekday ? "周" + "日一二三四五六".charAt(weekday) : null);
+        (weekday ? "周" + "日一二三四五六".charAt(weekday) : "周日");
       return nowTime;
     }
   }
