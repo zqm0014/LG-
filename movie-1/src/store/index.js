@@ -123,7 +123,10 @@ export default new Vuex.Store({
       //   ]
       //   }
  
-  ]
+  ],
+  //影院store
+  cinema:[],
+  buyCinema:[]
 },
   mutations: {
   GET(state, payload) {
@@ -140,7 +143,17 @@ export default new Vuex.Store({
   GETHOME(state, payload) {
     state.movies = payload
     state.arr = payload
+  },
+  //影院
+  SHOW(state,payload){
+    state.cinema=payload
+    // console.log(payload)
+  },
+  buyCinema(state,payload){
+    state.buyCinema=payload
+    // console.log(payload)
   }
+
 
 },
   actions: {
@@ -166,7 +179,20 @@ export default new Vuex.Store({
     async GETHOME({ commit }, payload) {
       var { movies } = await fetch('/getHome').then(res => res.json())
       commit('GETHOME', movies)
-    }
+    },
+    //影院
+    async SHOW({commit}){
+      var {cinema}=await fetch('/getCinema').then(res=>res.json())
+        // console.log(cinema)
+        commit('SHOW',cinema)
+      },
+   
+     async buyCinema({commit}){
+      var {cinema}=await fetch('/getCinema').then(res=>res.json())
+        // console.log(cinema)
+        commit('buyCinema',cinema)
+      }
+    
 },
   modules: {
 }

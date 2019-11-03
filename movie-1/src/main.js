@@ -11,10 +11,14 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 /*引入vant*/
 import 'vant/lib/index.css';
+//引入文字图标
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(directives)
 Vue.use(filters)
 Vue.use(Vant);
 Vue.use(VueAwesomeSwiper)
+Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 
