@@ -1,0 +1,154 @@
+{
+    "movies": [
+        {
+            "title": "唐人街探案2",
+            "tag": "喜剧 / 动作 / 犯罪",
+            "act": "陈思诚 王宝强 刘昊然 肖央 刘承羽 ",
+            "cover": "/moviePictures/tangrenjietanan.png",
+            "type": [
+                "2D",
+                "IMAX",
+                "中国巨幕"
+            ],
+            "like": "35.4万",
+            "score": "9.6",
+            "scenes": [
+                "222",
+                "3674"
+            ]
+        },{
+            "title": "哪吒之魔童降世",
+            "tag": "剧情 / 喜剧 / 动画",
+            "act": "饺子 吕艳婷 囧森瑟夫 瀚墨 陈浩 ",
+            "cover": "/moviePictures/nezha.png",
+            "type": [
+                "3D",
+                "IMAX",
+                "中国巨幕"
+            ],
+            "like": "39.3万",
+            "score": "9.3",
+            "scenes": [
+                "224",
+                "3742"
+            ]
+        },{
+            "title": "使徒行者2",
+            "tag": "剧情 / 动作 / 犯罪",
+            "act": "文伟鸿 张家辉 古天乐 吴镇宇 姜珮瑶 ",
+            "cover": "/moviePictures/shituxingzhe.png",
+            "type": [
+                "巨幕"
+            ],
+            "like": "13.5万",
+            "score": "9.0",
+            "scenes": [
+                "92",
+                "374"
+            ]
+        },{
+            "title": "一条狗的使命",
+            "tag": "剧情 / 喜剧 / 家庭",
+            "act": "拉斯·霍尔斯道姆 布丽特·罗伯森 丹尼斯·奎德 佩吉·利普顿 乔什·加德 ",
+            "cover": "/moviePictures/ytgdsm.png",
+            "type": [
+                "2D",
+                "巨幕"
+            ],
+            "like": "18.9万",
+            "score": "9.4",
+            "scenes": [
+                "203",
+                "674"
+            ]
+        },{
+            "title": "大侦探皮卡丘",
+            "tag": "喜剧 / 动画 / 奇幻 / 剧情",
+            "act": "陈罗伯·莱特曼 瑞恩·雷诺兹 贾斯蒂斯·史密斯 凯瑟琳·纽顿 克里斯·吉尔  ",
+            "cover": "/moviePictures/pikaqiu.png",
+            "type": [
+                "3D",
+                "IMAX",
+                "中国巨幕"
+            ],
+            "like": "15.8万",
+            "score": "8.6",
+            "scenes": [
+                "142",
+                "764"
+            ]
+        },{
+            "title": "西虹市首富",
+            "tag": "喜剧 ",
+            "act": "闫非 彭大魔 沈腾 宋芸桦 张一鸣 ",
+            "cover": "/moviePictures/xihongshishoufu.png",
+            "type": [
+                "2D"
+            ],
+            "like": "30.3万",
+            "score": "9.8",
+            "scenes": [
+                "282",
+                "574"
+            ]
+        },{
+            "title": "鼠胆英雄",
+            "tag": "喜剧 ",
+            "act": "束焕 邵丹 岳云鹏 佟丽娅 田雨 ",
+            "cover": "/moviePictures/shudanyingxiong.png",
+            "type": [
+                "巨幕"
+            ],
+            "like": "10.4万",
+            "score": "8.0",
+            "scenes": [
+                "14",
+                "76"
+            ]
+        },{
+            "title": "红海行动",
+            "tag": "动作 / 战争",
+            "act": "林超贤 张译 黄景瑜 海清 杜江",
+            "cover": "/moviePictures/honghai.png",
+            "type": [
+                "2D",
+                "中国巨幕"
+            ],
+            "like": "25.4万",
+            "score": "9.5",
+            "scenes": [
+                "22",
+                "364"
+            ]
+        },{
+            "title": "流浪地球",
+            "tag": "科幻",
+            "act": "郭帆 吴京 屈楚萧 李光洁 吴孟达",
+            "cover": "/moviePictures/liulang.png",
+            "type": [
+                "3D",
+                "中国巨幕"
+            ],
+            "like": "16.2万",
+            "score": "9.1",
+            "scenes": [
+                "256",
+                "834"
+            ]
+        },{
+            "title": "我不是药神",
+            "tag": "剧情 / 喜剧",
+            "act": "文牧野 徐峥 周一围 王传君 谭卓",
+            "cover": "/moviePictures/wobushiyaoshen.png",
+            "type": [
+                "2D"
+            ],
+            "like": "25.3万",
+            "score": "9.4",
+            "scenes": [
+                "294",
+                "2664"
+            ]
+        }
+    ]
+}
