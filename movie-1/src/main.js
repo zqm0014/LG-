@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import Vant from 'vant';
+
 import directives from './plugins/directives.js';
 import filters from './plugins/filters.js';
 /*引入swiper*/

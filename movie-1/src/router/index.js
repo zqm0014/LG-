@@ -7,6 +7,7 @@ import sousuoRouter from './sousuoRt'
 import chengshiRouter from './chengshiRt'
 import cinemaXQ from './cinemaXQ'
 import buyTicke from './buyTicke'
+import yyxq from './yingyuanXQ';
 
 Vue.use(VueRouter)
 // https://www.cnblogs.com/lxk0301/p/11671256.html
@@ -23,6 +24,7 @@ const routes = [
     chengshiRouter,
     cinemaXQ,
     buyTicke,
+    yyxq,
     {path: '/*', redirect: '/home/zzshangying'}
 
 ]
