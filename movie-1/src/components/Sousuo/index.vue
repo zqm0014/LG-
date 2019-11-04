@@ -6,7 +6,7 @@
       <p @click="dell" v-show="del"></p>
     </div>
     <div class="sslist">
-      <ul>
+      <ul v-if="sslist!=='no'">
         <li v-for="(item,index) in sslist" :key="index">
           <img src="img/1.jpg" />
           <div>
@@ -16,29 +16,36 @@
           </div>
         </li>
       </ul>
+      <ul v-else>
+        <li>未找到相关影片</li>
+      </ul>
     </div>
   </div>
 </template>
 
 <script>
+import { log } from "util";
 export default {
   data() {
     return {
       sousuo: "",
-      del:false
+      del: false,
+      settmout: null
     };
   },
   watch: {
     sousuo(val) {
-         if(val){
-              this.del=true
-         }else{
-              this.del=false
-         }
+      if (val) {
+        this.del = true;
+      } else {
+        this.del = false;
+      }
       let _this = this;
-      setTimeout(function() {
-        _this.$store.dispatch("SOUSUO", { val });
-      }, 1000);
+      clearTimeout(this.settmout);
+      this.settmout = setTimeout(function() {
+        console.log(val);
+        // _this.$store.dispatch("SOUSUO", { val });
+      }, 500);
     }
   },
   computed: {
@@ -51,7 +58,6 @@ export default {
       this.$router.go(-1);
     },
     dell() {
-         console.log(1234)
       this.sousuo = "";
     }
   }
@@ -63,19 +69,18 @@ export default {
   margin: rem(10) rem(10);
   display: flex;
   justify-content: center;
-  position :relative;
+  position: relative;
 }
 
-.sousuo .sskuang  p {
-     width:20px;
-     height 20px;
-     position :absolute;
-     right :rem(25);
-     top:rem(4);
-     background : url('../../../public/img/del.png')1px 0px no-repeat;
-     border-radius :50%;
-     background-size:20px 20px
-
+.sousuo .sskuang p {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: rem(25);
+  top: rem(4);
+  background: url('../../../public/img/del.png') 1px 0px no-repeat;
+  border-radius: 50%;
+  background-size: 20px 20px;
 }
 
 .sousuo .sskuang span {
@@ -96,7 +101,7 @@ export default {
   outline: none;
   padding-left: rem(35);
   background: url('../../../public/img/search.png') 10px 7px no-repeat #eee;
-  background-size:15px 15px
+  background-size: 15px 15px;
 }
 
 .sousuo .sslist {
