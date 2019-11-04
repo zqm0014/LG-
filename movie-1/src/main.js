@@ -14,6 +14,7 @@ import 'vant/lib/index.css';
 //引入文字图标
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import 'font-awesome/css/font-awesome.css'
 Vue.use(directives)
 Vue.use(filters)
 Vue.use(Vant);

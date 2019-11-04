@@ -5,6 +5,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    //电影详情
+    moveXQ:[],
     movies: [],
     arr: [],
     cityList: {},
@@ -129,6 +131,7 @@ export default new Vuex.Store({
   buyCinema:[]
 },
   mutations: {
+
   GET(state, payload) {
     state.cityList = payload
   },
@@ -152,6 +155,9 @@ export default new Vuex.Store({
   buyCinema(state,payload){
     state.buyCinema=payload
     // console.log(payload)
+  },
+  GETALL(state,payload){
+    state.moveXQ = payload
   }
 
 
@@ -186,7 +192,11 @@ export default new Vuex.Store({
         // console.log(cinema)
         commit('SHOW',cinema)
       },
-   
+    //电影详情
+    async GETALL({commit}){
+      var {movieDetails} = await fetch('/getFilm').then(res =>res.json())
+      commit('GETALL',movieDetails)
+    },
      async buyCinema({commit}){
       var {cinema}=await fetch('/getCinema').then(res=>res.json())
         // console.log(cinema)
