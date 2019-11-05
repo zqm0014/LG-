@@ -12,7 +12,7 @@
       <div class="content" v-height="215">
         <div class="detail" v-for="(item, index) in arr" :key="index">
           <div class="left">
-            <img src="/img/9.jpeg" alt />
+            <img :src=item.cover alt />
             <img src="/img/bofang.png" alt />
           </div>
           <div class="right">

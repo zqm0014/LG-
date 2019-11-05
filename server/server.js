@@ -34,6 +34,18 @@ app.get('/getCinema', (req, res) => {
         res.json(arr)
     })
 });
+//根据数据返回对应影院及电影
+app.post("/getCinemaMovie",function(req,res){
+    var where=req.body
+    fs.readFile('./dataCinema.json', (err, data) => {
+        var arr = JSON.parse(data.toString())
+        for(var i=0;i<arr.cinema.length;i++){
+            if(arr.cinema[i].title===where.title){
+                res.json(arr.cinema[i])
+            }
+        }               
+    })   
+})
 // 定位
 app.get('/getCity', (req, res) => {
     fs.readFile('./city.json', (err, data) => {
@@ -47,6 +59,9 @@ app.post('/search', (req, res) => {
     var str = req.body
     // console.log("str",str)
     fs.readFile('./dataFilm.json', (err, data) => {
+        if(err){
+            res.json({"msg":"no"})
+        }
         var arr = JSON.parse(data.toString())
         let arr1 = arr.movieDetails
         let arr2 = []
