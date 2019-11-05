@@ -8,12 +8,14 @@
         <router-view/> 
     </div>
     <TabBar />
+      <!--<moveXQ class="mv1"></moveXQ>-->
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header";
 import TabBar from "@/components/TabBar";
+import moveXQ from "@/components/moveXQ";
 export default {
   data(){
     return{
@@ -39,12 +41,21 @@ export default {
   },
   components: {
     Header,
-    TabBar
+    TabBar,moveXQ
   }
 };
 </script>
 
 <style scoped>
+    .mv1{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        background: #8b250c;
+    }
   .main .main-nav{display: flex;width: 100%;list-style: none;justify-content: center;}
   .main .main-nav li{width: 25%;height: 35px;line-height: 35px;text-align: center;}
    .main .main-nav li.active{border-bottom:2px solid crimson;box-sizing: border-box;}

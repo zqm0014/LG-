@@ -1,17 +1,18 @@
 <template>
   <div class="xuanzuo">
     <div class="xz-header">
-      <span>〈</span>
+      <span @click="goback">〈</span>
       <p>昌平暴力影城（昌平西关店）</p>
       <span>〉</span>
     </div>
+    <div v-height=50>
     <div class="xz-dyName">
       <h3>少年的你</h3>
       <span>今天11月3日</span>
       <span>20:40</span>
       <span>国语3D</span>
     </div>
-    <div class="xz-main">
+    <div class="xz-main" v-height=246>
       <div class="pm">2号厅银幕</div>
       <p class="text">银幕中央</p>
       <ul class="xuhao">
@@ -56,6 +57,7 @@
           </div>
       </div>
       <div class="tanchuang" v-show="tanchuang">每次最多选择4个座位</div>
+      </div>
   </div>
 </template>
 
@@ -177,14 +179,14 @@ export default {
             zhuangtai: false
           },
           { price:38,
-            img: "/img/xz-b-02.png",
+            img: "/img/xz-h-01.png",
             imglv: "/img/xz-l-02.png",
-            zhuangtai: false
+            zhuangtai: true
           },
           { price:38,
-            img: "/img/xz-b-02.png",
+            img: "/img/xz-h-01.png",
             imglv: "/img/xz-l-02.png",
-            zhuangtai: false
+            zhuangtai: true
           },
           { price:38,
             img: "/img/xz-b-02.png",
@@ -593,6 +595,9 @@ if(this.zuowei[pai][zuo].img=="/img/xz-b-02.png"){//判断是白的
         this.yixuanzuowei.forEach((item,i)=>{
           this.gpprice=item.price*(i+1)
         })
+    },
+    goback(){
+      this.$router.go(-1)
     }
   }
 };
@@ -626,7 +631,7 @@ if(this.zuowei[pai][zuo].img=="/img/xz-b-02.png"){//判断是白的
   }
   .xz-dyName {
       width 100%;
-      margin 10px 10px;
+      padding 10px 10px;
     span {
       font-size: 13px;
       padding-right: 10px;
@@ -690,6 +695,8 @@ if(this.zuowei[pai][zuo].img=="/img/xz-b-02.png"){//判断是白的
   .xzOk{
       margin 0 10px;
       width 95%
+      position absolute;
+      bottom 0;
       .yx{
           width 100%
           .txt{

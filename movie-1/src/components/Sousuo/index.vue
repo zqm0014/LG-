@@ -7,8 +7,8 @@
     </div>
     <div class="sslist">
       <ul v-if="sslist!=='no'">
-        <li v-for="(item,index) in sslist" :key="index">
-          <img src="img/1.jpg" />
+        <li v-for="(item,index) in sslist" :key="index" @click="gomovieXQ(item.title,item.score)">
+          <img :src=item.cover />
           <div>
             <p>{{item.title}}</p>
             <p>{{item.tag}}</p>
@@ -44,7 +44,7 @@ export default {
       clearTimeout(this.settmout);
       this.settmout = setTimeout(function() {
         console.log(val);
-        // _this.$store.dispatch("SOUSUO", { val });
+        _this.$store.dispatch("SOUSUO", { val });
       }, 500);
     }
   },
@@ -59,6 +59,9 @@ export default {
     },
     dell() {
       this.sousuo = "";
+    }
+    ,gomovieXQ(title,score){
+      this.$router.push({path :'/information', query : {title:title,score:score}})
     }
   }
 };

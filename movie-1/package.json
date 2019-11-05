@@ -9,6 +9,8 @@
   "dependencies": {
     "better-scroll": "^1.15.2",
     "core-js": "^3.3.2",
+    "element-ui": "^2.12.0",
+    "font-awesome": "^4.7.0",
     "vant": "^2.2.10",
     "vue": "^2.6.10",
     "vue-awesome-swiper": "^3.1.3",
