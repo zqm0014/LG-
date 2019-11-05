@@ -26,7 +26,15 @@
                         <span>{{item.address}}</span>
                     </p>
                     <p class="content-keyword">
-                        <span v-for="(items,indexs) of item.Keyword" :key="indexs">{{items}}</span>
+                        <span v-for="(items,indexs) of item.Keyword" :key="indexs"
+                          :class="{xiaochi:items=='小吃',
+                        zhekou:items=='折扣卡',
+                        db:items=='杜比全景声厅',
+                        tui:items=='退',
+                        gaiqian:items=='改签',
+                        zt:items=='60帧厅',
+                        }"
+                        >{{items}}</span>
                     </p>
                     <p class="content-ka">
             <span>
@@ -156,10 +164,34 @@
                 }
 
                 .content-keyword {
-                    span {
+                     span {
                         margin: 0 5px;
                         font-size: 10px;
                         border: solid 1px yellowgreen;
+                        &.xiaochi{
+                        border: solid 1px red;
+                        border-radius:3px
+                            
+                        }
+                        &.gaiqian{
+                        border: solid 1px blue;
+
+                        }
+                        &.zhekou{
+                        border: solid 1px #0f0
+                          border-radius:3px
+
+                        }
+                        &.db{
+                        border: solid 1px black;
+                          border-radius:3px
+
+                        }
+                        &.zt{
+                        border: solid 1px green ;
+                          border-radius:3px
+
+                        }
                     }
                 }
 
