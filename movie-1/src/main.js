@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import Vant from 'vant';
+
 import directives from './plugins/directives.js';
 import filters from './plugins/filters.js';
 /*引入swiper*/
@@ -14,6 +15,7 @@ import 'vant/lib/index.css';
 //引入文字图标
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import 'font-awesome/css/font-awesome.css'
 Vue.use(directives)
 Vue.use(filters)
 Vue.use(Vant);

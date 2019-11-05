@@ -1,22 +1,17 @@
 <template>
-    <div class="box">
-        <Header/>
-
-        <swiper :options="swiperOption">
-            <swiper-slide class="pic" v-for="(item,index) in picList" :key="index">
-                <div>
-                    <img :src="item.pic" alt/>
-                </div>
-                <!-- {{item.pic}} -->
-            </swiper-slide>
-            <div class="swiper-pagination" slot="pagination"></div>
-        </swiper>
-        <!-- <router-view :show="show"></router-view> -->
-        <div class="cinema">
+    <div class="dataCinema">
+        <nav>{{this.$router.history.current.query.name}}</nav>
+        <!-- <p>{{show}}</p> -->
+        <ul class="nav">
+            <li>10月20日</li>
+            <li>10月21日</li>
+            <li>10月22日</li>
+            <li>10月23日</li>
+            <li>10月24日</li>
+        </ul>
+        <div class="counte">
             <ul>
-                <li v-for="(item,index) of show"
-                    @click="XQ(item.title)"
-                    :key="index">
+                <li v-for="(item,index) of show" @click="XQ(item.title)" :key="index">
                     <router-view></router-view>
                     <p class="content-title">
                         <span>{{item.title}}</span>
@@ -37,95 +32,47 @@
                 </li>
             </ul>
         </div>
-        <TabBar/>
     </div>
 </template>
 
 <script>
-    import Header from "@/components/Header";
-    import TabBar from "@/components/TabBar";
-
     export default {
         data() {
-            return {
-                picList: [
-                    {
-                        pic: "/img/1.jpg"
-                    },
-                    {
-                        pic: "/img/2.jpg"
-                    },
-                    {
-                        pic: "/img/3.jpg"
-                    },
-                    {
-                        pic: "/img/4.jpg"
-                    }
-                ],
-                swiperOption: {
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true // 允许点击小圆点跳转
-                    },
-                    autoplay: {
-                        delay: 3000,
-                        disableOnInteraction: false // 手动切换之后继续自动轮播
-                    },
-                    loop: true
-                }
-            };
+            return {};
         },
-        //数据
+        methods:{
+            XQ(){
+                this.$router.push({path:'/yyxq',query:{name:this.$router.history.current.query.name}})
+            }
+        },
         computed: {
             show() {
                 // console.log(this.$store.state.cinema)
                 return this.$store.state.cinema;
-            }
-        },
-        methods: {
-            XQ(title) {
-                this.$router.push({path: '/cinemaXQ'})
-            }
-        },
-        components: {
-            Header,
-            TabBar,
+            },
         },
         created() {
             this.$store.dispatch("SHOW");
+            this.$store.dispatch("buyCinema");
         }
     };
 </script>
 
-<style scoped lang="stylus">
-
-
-    .pic img {
+<style  scoped lang="stylus">
+    .nav {
         width: 100%;
-        display: block;
-        height: 150px;
-    }
-
-    .content ul {
+        height: 20px;
+        line-height: 20px;
         list-style: none;
-        text-align: center;
-        width: 100%;
-        line-height: 40px;
-        display: flex;
-        height: 40px;
-        font-size: 12px;
-        color: #e3e3e3;
+
+        li {
+            width: 20%;
+            float: left;
+            border-bottom: solid 1px #e3e3e3;
+        }
     }
 
-    ul > li {
-        color: #000;
-        width: 25%;
-        font-size: 14px;
-        color: #999977;
-        border-bottom: solid 1px #e3e3e3;
-    }
-
-    .cinema {
+    .counte {
         width: 100%;
         box-sizing: border-box;
 

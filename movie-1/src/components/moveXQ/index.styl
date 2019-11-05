@@ -1,0 +1,453 @@
+.koubei {
+  width: 90%
+  height: rem(200)
+  background: #112428
+  margin: 0 auto
+  border-radius rem(10)
+
+  .kbt {
+    display flex
+    position relative
+
+    P {
+      position: absolute
+      right rem(10)
+      top rem(14)
+      font-size rem(13)
+      color #666
+
+      span {
+        margin-right: rem(10)
+      }
+    }
+
+    div {
+      color #fff
+      padding rem(10)
+
+      img {
+        width: rem(15)
+        height: rem(15)
+      }
+    }
+  }
+}
+
+.bigbox {
+  position: relative
+  overflow hidden
+  width 100vw
+  height 100vh
+  .header {
+    color: #fff;
+    display: flex;
+    align-items center
+    p {
+      flex: 1;
+      text-align center;
+      line-height rem(40)
+    }
+
+    span {
+      padding: rem(10)
+      text-align: center
+      width: 14%
+    }
+  }
+
+  .zhu {
+    background: linear-gradient(to right bottom, #405359, #142c30);
+    overflow: scroll
+  }
+}
+
+.xqTop {
+  display flex
+  width 96%
+  .zhupic {
+    width: 30%
+    height: rem(150)
+    padding rem(20)
+  }
+
+  div {
+    flex: 1
+
+    p:nth-of-type(1) {
+      margin-top: rem(20)
+      font-size: rem(20)
+      font-weight: blod
+      color: #fff
+    }
+    p{
+      font-size: rem(14)
+    }
+
+    div {
+      flex 1
+      display: flex
+      width 90%
+
+      div {
+        span {
+          margin-right: rem(5)
+        }
+        background: #66797d
+        border-radius rem(10)
+        line-height rem(30)
+        color: #fff
+        display flex
+        justify-content center
+        align-items center
+
+        &:nth-of-type(2) {
+          margin-left: rem(10)
+        }
+      }
+    }
+  }
+}
+.toubian{
+  div:nth-of-type(1){
+    &.cur{
+      color: #3eff19
+    }
+  }
+  div:nth-of-type(2){
+    &.cur{
+      color: #3eff19
+    }
+  }
+}
+.bigbox {
+  position: relative
+  overflow: hidden
+  .footer {
+    position: sticky
+    bottom: 0
+    height: rem(50)
+    background: #fff
+    border-radius 10px 10px 0 0
+    width: 100%
+
+    div {
+      float: left
+      text-align: center
+      line-height: rem(30)
+      width: 90%
+      height: rem(30)
+      border-radius 30px
+      background: #fe3c44
+      margin: rem(10) rem(20)
+    }
+  }
+}
+
+.yc {
+  position: sticky
+  top: 0
+  z-index 2
+  background: #162a33
+  color #ffffff
+  justify-content: space-between
+  align-items: center
+  display none
+  padding
+  span{
+    padding rem(20)
+  }
+  div{
+    .fa-star{
+      color #fdb50b
+    }
+    p:nth-of-type(2){
+      color  #fdb50b
+    }
+    flex 1
+    text-align left
+    img{
+      float: left
+    }
+  }
+
+}
+
+.pf {
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+
+  span:nth-of-type(1) {
+    font-size: rem(30)
+    font-weight bold
+    color: yellow
+  }
+
+  span:nth-of-type(2) {
+    padding rem(10)
+    font-size: rem(12)
+    color: #eee
+  }
+}
+
+.kbc {
+  display flex
+
+  .tiaoteam {
+    display flex
+
+  }
+}
+
+.xian {
+  content: ''
+  width: rem(310)
+  border-top 1px solid #eee
+  display inline-block
+  margin-left: rem(10)
+}
+
+.tiaoteam {
+  display flex
+  flex-direction column
+
+  div {
+    display flex
+    align-items center
+
+    span {
+      flex: 1
+      text-align right
+    }
+
+    .tiao {
+      span.f {
+        width: rem(100)
+        height: rem(10)
+        background: #6d88ff
+        position relative
+      }
+
+      span.z {
+        width: rem(90)
+        height: rem(10)
+        background: #ffb10e
+        position absolute
+        left: 0
+      }
+      .jindu {
+        flex: 0
+      }
+    }
+  }
+}
+
+.xian {
+  display inline-block
+  color #e9e3bf
+  font-size rem(10)
+
+  span {
+    padding: rem(10)
+    margin-top rem(10)
+    display inline-block
+  }
+
+  .jiantou {
+    float right
+    color #e9e3bf
+  }
+}
+
+.jianjie {
+  width 90%
+  margin-left rem(20)
+  p{
+    padding rem(10)
+  }
+  .xq {
+    width 100%
+    height: rem(60)
+    overflow: hidden
+    color #fff
+
+    &.cur {
+      height: auto
+    }
+  }
+
+  p {
+    span:nth-of-type(1) {
+      font-weight bolder
+      font-size: rem(20)
+      color #fff
+    }
+
+    span:nth-of-type(2) {
+      float right
+    }
+  }
+}
+
+.yzry {
+  width 90%
+  margin-left rem(20)
+
+  p {
+    padding rem(10)
+    span:nth-of-type(1) {
+      font-weight bolder
+      font-size: rem(20)
+      color #fff
+    }
+
+    span:nth-of-type(2) {
+      float right
+    }
+  }
+}
+
+.yanYuan {
+  display flex
+  flex-wrap wrap
+  align-items space-around
+  justify-content space-between
+  height rem(182)
+  overflow: hidden
+  font-size: rem(14)
+  &.cur {
+    height: auto
+  }
+
+  figure {
+    text-align: center
+    width: 23%
+    margin-top rem(10)
+
+    img {
+      width: 100%
+    }
+  }
+}
+.pinglun {
+  width: 100%
+  border-radius rem(20) rem(20) 0 0
+  background #fff
+  margin-top rem(20)
+  margin-bottom rem(45)
+  .plhexin {
+    width: 90%
+    margin-left: rem(20)
+    font-size rem(14)
+
+    .jx {
+      border-bottom: 1px solid #D4D0EE
+      border-top: 1px solid #d4d0ee
+      margin: rem(20) 0
+      padding rem(10) 0
+    }
+
+    .plxtop {
+      span:nth-of-type(2) {
+        float: right
+        border-radius rem(20)
+        background: #ee3b34
+        color #fff
+        padding: rem(5) rem(15)
+      }
+
+      span:nth-of-type(1) {
+        font-size rem(16)
+        font-weight bolder
+      }
+
+    }
+  }
+}
+
+.biaoqian {
+  display flex
+  flex-wrap wrap
+  margin-top: rem(20)
+  text-align center
+
+  span {
+    font-weight normal
+    font-size rem(16)
+    width: 19%
+    border-radius rem(20)
+    border: 1px solid #e8e0ff
+    margin-right: rem(30)
+  }
+}
+
+.lbtop {
+  div {
+    width rem(50)
+    height rem(50)
+    border-radius 50%
+    overflow: hidden
+    float left
+
+    img {
+      width 100%
+    }
+  }
+
+  .mingzi {
+    color: #000
+  }
+
+  p {
+    color #c2c4ee
+    padding: rem(4) rem(65)
+  }
+}
+
+.lbbottom {
+  padding-top: rem(10)
+  margin-left: rem(66);
+  width: rem(250);
+
+  div {
+    margin-top rem(10)
+    padding rem(10)
+    span:nth-of-type(1) {
+      color: #666
+    }
+    span:nth-of-type(2) {
+      float: right
+      border 1px solid
+      padding: rem(5)
+      border-radius rem(20)
+      margin-right:rem(5)
+    }
+
+    span:nth-of-type(3){
+      float: right
+      border 1px solid
+      padding: rem(5)
+      border-radius rem(20)
+      margin-right:rem(10)
+      margin-bottom: rem(5)
+    }
+  }
+}
+  .liebiao{
+    padding rem(10)
+    border-bottom:1px solid #d4d0ee
+  }
+.goupiao{
+  width 100%
+  height 100%
+  position absolute
+  left 0
+  top 0
+  z-index 5
+  background: #d4d0ee
+  display none
+}
+ .fa-star{
+    color #506266
+  }

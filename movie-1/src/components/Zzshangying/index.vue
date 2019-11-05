@@ -112,6 +112,7 @@ export default {
         this.$router.push({path :'/buyTicke',  query : {title}})
     },
     information(title){
+      console.log(title)
       this.$router.push({path :'/information', query : {title}})
     }
   }
