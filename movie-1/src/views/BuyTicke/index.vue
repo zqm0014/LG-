@@ -41,19 +41,17 @@
             return {};
         },
         methods:{
-            XQ(){
-                this.$router.push({path:'/yyxq',query:{name:this.$router.history.current.query.name}})
+            XQ(title){
+                this.$router.push({path:'/yyxq',query:{name:this.$router.history.current.query.name,title:title}})
             }
         },
         computed: {
             show() {
-                // console.log(this.$store.state.cinema)
                 return this.$store.state.cinema;
             },
         },
         created() {
             this.$store.dispatch("SHOW");
-            this.$store.dispatch("buyCinema");
         }
     };
 </script>

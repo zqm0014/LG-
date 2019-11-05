@@ -28,11 +28,11 @@
         :key="index"
       >
         <div class="picture">
-            <img src='/img/9.jpeg' alt />
+            <img :src=item.cover  />
             <img src="/img/bofang.png" />
         </div>
         <div class="message">
-          <ul @click="information(item.title)">
+          <ul @click="information(item.title,item.score)">
             <li>
               <span 
                 v-for="(child) in item.title" 
@@ -111,9 +111,9 @@ export default {
     buyTicke(title){
         this.$router.push({path :'/buyTicke',  query : {title}})
     },
-    information(title){
+    information(title,score){
       console.log(title)
-      this.$router.push({path :'/information', query : {title}})
+      this.$router.push({path :'/information', query : {title:title,score:score}})
     }
   }
 };

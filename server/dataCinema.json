@@ -17,10 +17,11 @@
                         {
                             "name": "少年的你",
                             "score": "9.6",
+                            "img":"/moviePictures/tangrenjietanan.png",
                             "zhuyan": "135分钟 爱情/青春/剧情 周冬雨/易烊千玺/尹昉",
                             "scenes": [
                                 {
-                                    "time": "one",
+                                    "time": "今天10月28日",
                                     "times": [
                                         {
                                             "kaichang": "20:40",
@@ -53,7 +54,7 @@
                                     ]
                                 },
                                 {
-                                    "time": "two",
+                                    "time": "明天10月29日",
                                     "times": [
                                         {
                                             "kaichang": "20:40",
@@ -86,7 +87,7 @@
                                     ]
                                 },
                                 {
-                                    "time": "three",
+                                    "time": "后天10月30日",
                                     "times": [
                                         {
                                             "kaichang": "20:40",
@@ -119,7 +120,7 @@
                                     ]
                                 },
                                 {
-                                    "time": "four",
+                                    "time": "周四10月31日",
                                     "times": [
                                         {
                                             "kaichang": "20:40",
@@ -189,6 +190,7 @@
                         {
                             "name": "哪吒之魔童降世",
                             "score": "9.8",
+                            "img": "/moviePictures/nezha.png",
                             "zhuyan": "110分钟 剧情/喜剧/动画 吕艳婷/囧森瑟夫/瀚墨",
                             "scenes": [
                                 {
@@ -361,6 +363,7 @@
                         {
                             "name": "使徒行者2",
                             "score": "9.5",
+                            "img": "/moviePictures/shituxingzhe.png",
                             "zhuyan": "98分钟 剧情/动作/犯罪 张家辉/古天乐/吴镇宇",
                             "scenes": [
                                 {
@@ -533,6 +536,7 @@
                         {
                             "name": "一条狗的使命",
                             "score": "9.7",
+                            "cover": "/moviePictures/ytgdsm.png",
                             "zhuyan": "101分钟 剧情/喜剧/家庭 布丽特·罗伯森/丹尼斯·奎德/佩吉·利普顿",
                             "scenes": [
                                 {
@@ -721,6 +725,7 @@
                         {
                             "name": "少年的你",
                             "score": "9.6",
+                            "img":"/moviePictures/tangrenjietanan.png",
                             "zhuyan": "135分钟 爱情/青春/剧情 周冬雨/易烊千玺/尹昉",
                             "scenes": [
                                 {
@@ -893,6 +898,7 @@
                         {
                             "name": "哪吒之魔童降世",
                             "score": "9.8",
+                            "img": "/moviePictures/nezha.png",
                             "zhuyan": "110分钟 剧情/喜剧/动画 吕艳婷/囧森瑟夫/瀚墨",
                             "scenes": [
                                 {
@@ -1065,6 +1071,7 @@
                         {
                             "name": "使徒行者2",
                             "score": "9.5",
+                            "img": "/moviePictures/shituxingzhe.png",
                             "zhuyan": "98分钟 剧情/动作/犯罪 张家辉/古天乐/吴镇宇",
                             "scenes": [
                                 {
@@ -1424,6 +1431,7 @@
                         {
                             "name": "少年的你",
                             "score": "9.6",
+                            "img":"/moviePictures/tangrenjietanan.png",
                             "zhuyan": "135分钟 爱情/青春/剧情 周冬雨/易烊千玺/尹昉",
                             "scenes": [
                                 {
@@ -1596,6 +1604,7 @@
                         {
                             "name": "哪吒之魔童降世",
                             "score": "9.8",
+                            "img": "/moviePictures/nezha.png",
                             "zhuyan": "110分钟 剧情/喜剧/动画 吕艳婷/囧森瑟夫/瀚墨",
                             "scenes": [
                                 {
@@ -1768,6 +1777,7 @@
                         {
                             "name": "使徒行者2",
                             "score": "9.5",
+                            "img": "/moviePictures/shituxingzhe.png",
                             "zhuyan": "98分钟 剧情/动作/犯罪 张家辉/古天乐/吴镇宇",
                             "scenes": [
                                 {
@@ -2126,6 +2136,7 @@
                         {
                             "name": "少年的你",
                             "score": "9.6",
+                            "img":"/moviePictures/tangrenjietanan.png",
                             "zhuyan": "135分钟 爱情/青春/剧情 周冬雨/易烊千玺/尹昉",
                             "scenes": [
                                 {
@@ -2298,6 +2309,7 @@
                         {
                             "name": "哪吒之魔童降世",
                             "score": "9.8",
+                            "img": "/moviePictures/nezha.png",
                             "zhuyan": "110分钟 剧情/喜剧/动画 吕艳婷/囧森瑟夫/瀚墨",
                             "scenes": [
                                 {
@@ -2470,6 +2482,7 @@
                         {
                             "name": "使徒行者2",
                             "score": "9.5",
+                            "img": "/moviePictures/shituxingzhe.png",
                             "zhuyan": "98分钟 剧情/动作/犯罪 张家辉/古天乐/吴镇宇",
                             "scenes": [
                                 {
@@ -2832,6 +2845,7 @@
                         {
                             "name": "少年的你",
                             "score": "9.6",
+                            "img":"/moviePictures/tangrenjietanan.png",
                             "zhuyan": "135分钟 爱情/青春/剧情 周冬雨/易烊千玺/尹昉",
                             "scenes": [
                                 {
@@ -3004,6 +3018,7 @@
                         {
                             "name": "哪吒之魔童降世",
                             "score": "9.8",
+                            "img": "/moviePictures/nezha.png",
                             "zhuyan": "110分钟 剧情/喜剧/动画 吕艳婷/囧森瑟夫/瀚墨",
                             "scenes": [
                                 {
@@ -3176,6 +3191,7 @@
                         {
                             "name": "使徒行者2",
                             "score": "9.5",
+                            "img": "/moviePictures/shituxingzhe.png",
                             "zhuyan": "98分钟 剧情/动作/犯罪 张家辉/古天乐/吴镇宇",
                             "scenes": [
                                 {
@@ -3534,6 +3550,7 @@
                         {
                             "name": "少年的你",
                             "score": "9.6",
+                            "img":"/moviePictures/tangrenjietanan.png",
                             "zhuyan": "135分钟 爱情/青春/剧情 周冬雨/易烊千玺/尹昉",
                             "scenes": [
                                 {
@@ -3706,6 +3723,7 @@
                         {
                             "name": "哪吒之魔童降世",
                             "score": "9.8",
+                            "img": "/moviePictures/nezha.png",
                             "zhuyan": "110分钟 剧情/喜剧/动画 吕艳婷/囧森瑟夫/瀚墨",
                             "scenes": [
                                 {
@@ -3878,6 +3896,7 @@
                         {
                             "name": "使徒行者2",
                             "score": "9.5",
+                            "img": "/moviePictures/shituxingzhe.png",
                             "zhuyan": "98分钟 剧情/动作/犯罪 张家辉/古天乐/吴镇宇",
                             "scenes": [
                                 {

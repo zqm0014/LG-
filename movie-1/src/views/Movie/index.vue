@@ -84,7 +84,8 @@
         },
         methods: {
             XQ(title) {
-                this.$router.push({path: '/cinemaXQ'})
+                console.log("1234567",title)
+                this.$router.push({path: '/yyxq',query:{title:title}})
             }
         },
         components: {
