@@ -2,7 +2,7 @@ export default{
     path: '/login',
     name: 'login',
     meta:{
-        name:"我的"
+        name:"登录"
       },
     component: () => import('@/views/Login')
 }

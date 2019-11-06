@@ -8,7 +8,6 @@
         <router-view/> 
     </div>
     <TabBar />
-      <!--<moveXQ class="mv1"></moveXQ>-->
   </div>
 </template>
 

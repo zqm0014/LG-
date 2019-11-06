@@ -1,0 +1,65 @@
+{
+  "id": "1493466",
+  "name": "movie-1",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4769998",
+      "name": "VIP",
+      "font_class": "VIP",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "7794668",
+      "name": "冰激凌",
+      "font_class": "bingjiling",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "9097134",
+      "name": "冰激凌",
+      "font_class": "ziyuan",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "9370863",
+      "name": "返回-0-2",
+      "font_class": "tubiao-1",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "9370864",
+      "name": " 更多-0-2",
+      "font_class": "tubiao-",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "9458118",
+      "name": "分享",
+      "font_class": "tubiao-3",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "11592817",
+      "name": "点赞",
+      "font_class": "danyehuaban",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "11613936",
+      "name": "定位",
+      "font_class": "dingwei1",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}
