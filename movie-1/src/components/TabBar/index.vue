@@ -22,7 +22,7 @@ export default {
         },
         {
           title: "我的",
-          url: "/login",
+          url: "/mine",
         }
       ]
     };

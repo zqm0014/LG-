@@ -9,6 +9,8 @@ import cinemaXQ from './cinemaXQ'
 import buyTicke from './buyTicke'
 import yyxq from './yingyuanXQ';
 import xuanzuo from './xuanzuoRt';
+import mineRouter from './mineRt'
+import registerRouter from './registerRt'
 
 Vue.use(VueRouter)
 // https://www.cnblogs.com/lxk0301/p/11671256.html
@@ -18,6 +20,8 @@ VueRouter.prototype.push = function push(location) {
     return routerPush.call(this, location).catch(error => error)
 }
 const routes = [
+    mineRouter,
+    registerRouter,
     homeRouter,
     movieRouter,
     loginRouter,
