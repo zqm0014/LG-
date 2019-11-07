@@ -1,0 +1,50 @@
+电影   路由接口  /getFilm
+	电影详情	movieDetails
+		id	1
+		电影名	title
+		类型	tag	数组
+		演员	act	数组
+		上映年份	year	
+		上映地点	place
+		电影时长	duration
+		导演	dir
+		影片简介	desc
+		标题图片	cover
+		影厅	type	数组
+		想看	like
+		评分	score	
+		影院/场次	scenes	数组
+		演员对象	act_s	数组+对象
+			演员名  name
+			饰演角色	shi
+			演员图片	image
+		评论对象  comment	数组+对象
+			名字  name
+			评论文本  txt
+			图片  image
+			点赞  zan
+			状态	true
+
+影院详情   路由接口  /getCinema
+	影院对象	cinema
+		影院名	title
+		影院地址	address
+		起步价	price
+		标签	Keyword
+		卡	ka
+		惠 hui
+		详情	details
+			影片	films
+				电影名	name
+				评分	score
+				时长、演员	zhuyan
+				场次	scenes
+					日期（今明后）	time
+					时间	times
+						开场时间	kaichang	
+						结束时间	sanchang
+						语言	yuyan
+						厅	ting
+						价格	money
+
+首页/详情	movieTag
