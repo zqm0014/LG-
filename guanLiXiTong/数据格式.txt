@@ -2,9 +2,9 @@
 	电影详情	movieDetails
 		id	1
 		电影名	title
-		类型	tag
-		演员	act
-		上映年份	year
+		类型	tag	数组
+		演员	act	数组
+		上映年份	year	
 		上映地点	place
 		电影时长	duration
 		导演	dir
